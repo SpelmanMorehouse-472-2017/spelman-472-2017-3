@@ -1,0 +1,43 @@
+Title: Mmmmm (So Good)
+Author(s): Nathan Harris, Brianna Fugate, Kayla Banks, Honesty Nealy, Taylor Alexander
+Purpose: To improve the lifestyles and eating habits of college students, by providing healthy and diverse recipes. 
+Project Scope: This project will consist of creating a visually appealing  and information application based upon what college students like to eat and their daily lifestyles. The project will be completed by November, 2017. Features of the application will include; filtering result of dietary restrictions, exercise, cooking restrictions and a shopping list.  
+Target Demographics: College Students
+Product overview and use cases
+Requirements:
+
+  Functional requirements 
+    Checking the current health needs of the user.
+    Giving tips on what to prepare for a meal each day of the week.
+    Providing a way for users to share in an interactive community with other users.
+    Checking that meals only appear that meet the user's dietary restrictions.
+    
+  Usability requirements (e.g. use and learnability of a product)
+    Users will be able to navigate through the app to find meals that meet their wants. 
+    The app will be intuitive so that the user will know what buttons navigate them        
+    where.
+    Should focus on a specific persona so that the app is intuitive enough for this persona to learn and remember whenever using the app. 
+    Will do a lot of usability testing to retrieve quantitative data for improvement of the app. 
+    
+  Technical requirements (e.g. security, network, platform, integration, client)
+    App will be used on IOS/ Android
+    App will be able to work offline as internet connection is not required
+    Tracks app usage such as how often the app is used and what services they use
+    Point to point integration
+    
+  Environmental requirements 
+   App will consume a low amount of energy.
+   App will cause a positive effect on an evviornmental attitude that will attract customers who prefer to purchase more ethically derived   products.
+   
+  Support requirements 
+  Interaction requirements (e.g. how the product should work with other systems) 
+Assumptions
+  App will deliver reasonable data in a effective time.
+  App will be functional on the latest IOS android software
+  
+  
+Constraints
+  App will not be visibleon desktops
+  
+Dependencies
+    Food Coded data
