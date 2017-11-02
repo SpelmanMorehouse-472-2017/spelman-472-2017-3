@@ -1,0 +1,9 @@
+What's the difference between Recipes and RecipeList?  Where are those classes defined?
+
+Your user stories describe a user, but not a story.  The story should include that user using the app, how they interact with it and what it does to meet their needs.
+
+Your app should be serving your API, not hello world.
+
+Think about what kinds of things "like and dislikes" might be and how you will use them.
+
+I like your dashboard.  I would like to see more detail though - could you add a section where people breakdown the tasks into smaller bits?
