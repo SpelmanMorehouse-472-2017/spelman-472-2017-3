@@ -1,9 +1,14 @@
 What's the difference between Recipes and RecipeList?  Where are those classes defined?
+A: Recipes are in the huge data set in which the information is being pulled from. RceipeList is a list of favorite recipes that the user liked.
 
 Your user stories describe a user, but not a story.  The story should include that user using the app, how they interact with it and what it does to meet their needs.
+A: We have updated our user story to match what you specified above. Thank you for the clarification.  
 
 Your app should be serving your API, not hello world.
+A: We are going to change the API to match the "recipes" we submitted. For some reason it is still serving hello world.
 
 Think about what kinds of things "like and dislikes" might be and how you will use them.
+A: Duly noted.
 
 I like your dashboard.  I would like to see more detail though - could you add a section where people breakdown the tasks into smaller bits?
+A: Thank you. We are going to put more detailed description of said tasks. This information will be in the dropdown option of the tasks.
