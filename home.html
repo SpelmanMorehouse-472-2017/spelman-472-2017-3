@@ -38,7 +38,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="http://a.abcnews.com/images/Health/gty_healthy_breakfast_oatmeal_fruits_thg_130531_wb.jpg" style="width:100%">
+    <img src="http://bodypreference.com/wp-content/uploads/2017/03/breakfast-juice-fruit-cereal-bowl.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
       <h3><button class="w3-button w3-teal w3-text-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Sign Up</button></h3>
       <p><b>Enjoy our delicious breakfast options</b></p>   
@@ -52,7 +52,7 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://www.fitnessmagazine.com/sites/fitnessmagazine.com/files/styles/channel_masonry/public/1000-dietitian-lunch-wide-sandwich.jpg?itok=QG2nXL_y" style="width:100%">
+    <img src="http://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/2016/08/main/1609p100-baby-kale-butternut-chicken-salad.jpg?itok=wHHUPiSu" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
       <h3><button class="w3-button w3-teal w3-text-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Sign Up</button></h3>
       <p><b>Enjoy our delicious lunch options</b></p>    
@@ -186,7 +186,6 @@ function myMap() {
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
   var marker = new google.maps.Marker({
     position: myCenter,
   });
@@ -214,7 +213,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -226,7 +224,6 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
     var x = document.getElementById("navDemo");
@@ -236,7 +233,6 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
@@ -248,5 +244,3 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
-
