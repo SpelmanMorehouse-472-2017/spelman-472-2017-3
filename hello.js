@@ -53,12 +53,11 @@ function enableButtons () {
 	// Update the button label now that the button is active
 	btn.value="Click me for a personal greeting";
 	
-	// Set the onclick action for the third button
-	btn = document.getElementById("input_greet_by_period");
-	btn.onclick=function(){greetByTimeOfDay();};
-	
+	// Set the onclick action for the recipes button
+	btn = document.getElementById("recipes");
+	btn.onclick=function(){recipeName();};
 	// Update the button label now that the button is active
-	btn.value="Click me for an even more personalized greeting";
+	btn.value="Click me for a recipe";
 }
 
 /*
@@ -87,29 +86,25 @@ function greetByName () {
 	var request = gapi.client.helloworldendpoints.sayHelloByName({'name': name});
 	request.execute(sayHelloCallback);
 }
-
 /*
- * Execute a request to the greetByPeriod() endpoints function.
+ * Execute a request to the getRecipeType() endpoints function.
  * Illustrates calling an endpoints function that takes an argument.
  */
-function greetByTimeOfDay () {
-	// Get the name from the name_field element
-	var name = document.getElementById("name_field").value;
-	var period = document.getElementById("period_select").value;
-	
-	// Call the greetByPeriod() function.
+function recipeName () {
+	// Call the getRecipeType() function.
+	// It takes one argument "recipe"
 	// On success, pass the response to sayHelloCallback()
-	var request = gapi.client.helloworldendpoints.greetByPeriod(
-			{'name': name, 'period' : period});
-	request.execute(sayHelloCallback);
+	var request = gapi.client.helloworldendpoints.getRecipeType({'dessertrecipe': dessertrecipe});
+	request.execute(aCustomers);
 }
-
 // Process the JSON response
 // In this case, just show an alert dialog box
 // displaying the value of the message field in the response
 function sayHelloCallback (response) {
 	alert(response.message);	
 }
+function getRecipeCallBack(response){
+	var myJSON = JSON.stringify(response);
+	alert(myJSON)
 
-
-
+}
