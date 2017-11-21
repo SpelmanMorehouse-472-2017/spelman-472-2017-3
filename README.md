@@ -24,7 +24,7 @@ Quality of Service: https://github.com/SpelmanMorehouse-472-2017/spelman-472-201
 
 
 
-Completeness of Implementation: spelman-472-2017-3.appspot.com
+Completeness of Implementation: https://spelman-472-2017-3.appspot.com/
 
 
 
