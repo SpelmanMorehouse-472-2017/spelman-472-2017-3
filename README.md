@@ -48,7 +48,5 @@ Tracking Plan Link:
 Testing Plan Link:
 1. https://docs.google.com/document/d/1dIcD0e9hWUEQi8GAsCivHTMRRT6kfB2PBUSzCj7z_yc/edit
 
-Link to app server: https://spelman-472-2017-3.appspot.com/_ah/api/helloworldendpoints/v1/sayHelloByName?name 
-
 Link to UI: https://drive.google.com/drive/folders/0B_quynlzmtqfNm8tTmRCTjJBNDQ?usp=sharing
 
