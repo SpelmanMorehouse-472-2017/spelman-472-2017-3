@@ -53,8 +53,27 @@ function enableButtons () {
 	btn.onclick=function(){recipeGluten();};
 	btn.value="Click Here For Gluten Free";
 	btn = document.getElementById("vegetarian");
-	btn.onclick=function(){recipeGluten();};
+	btn.onclick=function(){recipeVegetarian();};
 	btn.value="Click Here For Vegetarian";
+	btn = document.getElementById("fall");
+	btn.onclick=function(){recipeFall();};
+	btn.value="Click Here For Fall";
+	btn = document.getElementById("spring");
+	btn.onclick=function(){recipeSpring();};
+	btn.value="Click Here For Spring";
+	btn = document.getElementById("summer");
+	btn.onclick=function(){recipeSummer();};
+	btn.value="Click Here For Summer";
+	btn = document.getElementById("frozen");
+	btn.onclick=function(){recipeFrozen();};
+	btn.value="Click Here For Frozen";
+	btn = document.getElementById("lowSugar");
+	btn.onclick=function(){recipeLowSugar();};
+	btn.value="Click Here For Low Sugar";
+	btn = document.getElementById("cake");
+	btn.onclick=function(){recipeCake();};
+	btn.value="Click Here For Cake";
+	
 }
 
 function recipeName (title) {
@@ -90,6 +109,37 @@ function recipeGluten () {
 
 function recipeVegetarian () {
 	var request = gapi.client.recipesendpoints.getVegetarian();
+	request.execute(getRecipeCallBack)
+}
+
+
+function recipeFall () {
+	var request = gapi.client.recipesendpoints.getFallRecipe();
+	request.execute(getRecipeCallBack)
+}
+
+function recipeSpring () {
+	var request = gapi.client.recipesendpoints.getSpringRecipe();
+	request.execute(getRecipeCallBack)
+}
+
+function recipeSummer () {
+	var request = gapi.client.recipesendpoints.getSummerRecipe();
+	request.execute(getRecipeCallBack)
+}
+
+function recipeFrozen () {
+	var request = gapi.client.recipesendpoints.getFrozen();
+	request.execute(getRecipeCallBack)
+}
+
+function recipeLowSugar () {
+	var request = gapi.client.recipesendpoints.getLowSugar();
+	request.execute(getRecipeCallBack)
+}
+
+function recipeCake () {
+	var request = gapi.client.recipesendpoints.getCakeRecipe();
 	request.execute(getRecipeCallBack)
 }
 
