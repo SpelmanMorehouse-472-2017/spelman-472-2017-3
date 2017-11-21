@@ -8,7 +8,7 @@ Unit/Integration Test Plan & Test Implentation: https://github.com/SpelmanMoreho
 
 
 
-Progress Tracking/Intermediate Submissions/Scrum Notes:
+Progress Tracking/Intermediate Submissions/Scrum Notes: https://drive.google.com/open?id=1X3ZrGCSElF8BYqLTJyRbfjAm2mcVaxcv
 
 
 
