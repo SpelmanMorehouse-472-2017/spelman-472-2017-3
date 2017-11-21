@@ -1,6 +1,0 @@
-User Story for Software Engineering Project Spelman College Fall 2017
-1. As a college student, I want a user-friendly application that provides daily recipe suggestions for breakfast, lunch, dinner and snacks. 
-2. As a college student, I want healthy recipes that will help me maintain a balanced lifestyle through the foods i eat.
-3. As a college student, I want daily recipes that are healthy, simple, and tasty. 
-4. As a college student, I want my eating to reflect a well-balanced lifestyle. 
-5. As a college student, I want a user friendly application that provides daily recipe suggestions for breakfast, lunch, dinner, and snacks to users for specific health conditions. 
