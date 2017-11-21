@@ -28,8 +28,9 @@ public class RecipesEndpoints {
 	
 	 @ApiMethod(name = "getBreakfast", path = "getBreakfast", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getBreakfastRecipes(@Named("breakfastrecipe") ArrayList<String> breakfastrecipe) throws Exception {
+	 public RecipesClass getBreakfast() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
+
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
 	    	    		"SELECT title FROM [spelman-472-2017-3:Recipes.finalrecipes] WHERE categories =  'Breakfast' LIMIT 25").setUseLegacySql(true).build();
@@ -54,7 +55,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> breakfastrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  breakfastrecipe.add(row.get(0).getStringValue());
@@ -63,18 +64,16 @@ public class RecipesEndpoints {
 	    	  result = result.getNextPage();
 	    	}
 	    	
-	    	return new RecipesClass(breakfastrecipe);
+	    	return new RecipesClass("Recipes",breakfastrecipe);
 	    }
 	
 	 @ApiMethod(name = "getLunch", path = "getLunch", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getLunchRecipes(@Named("lunchrecipe") ArrayList<String> lunchrecipe) throws Exception {
+	 public RecipesClass getLunch() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
 	    	    		"SELECT title FROM [spelman-472-2017-3:Recipes.finalrecipes] WHERE categories = 'Lunch' LIMIT 25").setUseLegacySql(true).build();
-//		+ " FROM `spelman-472-2017-3.Recipes.finalrecipes` WHERE categories=" + recipe + ";").setUseLegacySql(false).build();
-
 	    	// Create a job ID so that we can safely retry.
 	    	JobId jobId = JobId.of(UUID.randomUUID().toString());
 	    	Job queryJob = bigquery.create(JobInfo.newBuilder(queryConfig).setJobId(jobId).build());
@@ -96,7 +95,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> lunchrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  lunchrecipe.add(row.get(0).getStringValue());
@@ -105,12 +104,12 @@ public class RecipesEndpoints {
 	    	  result = result.getNextPage();
 	    	}
 	    	
-	    	return new RecipesClass(lunchrecipe);
+	    	return new RecipesClass("Recipes",lunchrecipe);
 	    }
 	 
 	 @ApiMethod(name = "getDinner", path = "getDinner", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getDinnerRecipes(@Named("dinnerrecipe") ArrayList<String> dinnerrecipe) throws Exception {
+	 public RecipesClass getDinner() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -136,7 +135,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> dinnerrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  dinnerrecipe.add(row.get(0).getStringValue());
@@ -145,12 +144,12 @@ public class RecipesEndpoints {
 	    	  result = result.getNextPage();
 	    	}
 	    	
-	    	return new RecipesClass(dinnerrecipe);
+	    	return new RecipesClass("Recipe",dinnerrecipe);
 	    }
 	 
 	 @ApiMethod(name = "getQuickEasy", path = "getQuick&Easy", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getQuickEasyRecipes(@Named("quickrecipe") ArrayList<String> quickrecipe) throws Exception {
+	 public RecipesClass getQuickEasy() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -176,7 +175,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> quickrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  quickrecipe.add(row.get(0).getStringValue());
@@ -190,7 +189,7 @@ public class RecipesEndpoints {
 	 
 	 @ApiMethod(name = "getGlutenFree", path = "getGlutenFree", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getGlutenFreeRecipes(@Named("quickrecipe") ArrayList<String> glutenrecipe) throws Exception {
+	 public RecipesClass getGlutenFree() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -216,7 +215,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> glutenrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  glutenrecipe.add(row.get(0).getStringValue());
@@ -228,9 +227,9 @@ public class RecipesEndpoints {
 	    	return new RecipesClass(glutenrecipe);
 	    }
 	 
-	 @ApiMethod(name = "getVegetarianRecipe", path = "getVegetarianRecipe", 
+	 @ApiMethod(name = "getVegetarian", path = "getVegetarian", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getVegetarianRecipes(@Named("vegitarianrecipe") String vegitarianrecipe) throws Exception {
+	 public RecipesClass getVegetarian() throws Exception {
 			BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 		    	QueryJobConfiguration queryConfig =
 		    	    QueryJobConfiguration.newBuilder(
@@ -265,12 +264,12 @@ public class RecipesEndpoints {
 		    	  result = result.getNextPage();
 		    	}
 		    	
-		    	return new RecipesClass(vegitarianrecipe,vegetarianrecipelist);
+		    	return new RecipesClass(vegetarianrecipelist);
 		    }
 	  
 	 @ApiMethod(name = "getFallRecipe", path = "getFallRecipe", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getFallRecipes(@Named("fallrecipe") String fallrecipe) throws Exception {
+	 public RecipesClass getFallRecipe() throws Exception {
 			BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 		    	QueryJobConfiguration queryConfig =
 		    	    QueryJobConfiguration.newBuilder(
@@ -305,12 +304,12 @@ public class RecipesEndpoints {
 		    	  result = result.getNextPage();
 		    	}
 		    	
-		    	return new RecipesClass(fallrecipe,fallrecipelist);
+		    	return new RecipesClass(fallrecipelist);
 		    }
 	 
-	 @ApiMethod(name = "getSpringFree", path = "getSpringFree", 
+	 @ApiMethod(name = "getSpringRecipe", path = "getSpringRecipe", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getSpringRecipes(@Named("quickrecipe") ArrayList<String> springrecipe) throws Exception {
+	 public RecipesClass getSpringRecipe() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -336,7 +335,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> springrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  springrecipe.add(row.get(0).getStringValue());
@@ -350,7 +349,7 @@ public class RecipesEndpoints {
 	 
 	 @ApiMethod(name = "getSummerRecipe", path = "geSummerRecipe", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getSummerRecipes(@Named("fallrecipe") String summerrecipe) throws Exception {
+	 public RecipesClass getSummerRecipe() throws Exception {
 			BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 		    	QueryJobConfiguration queryConfig =
 		    	    QueryJobConfiguration.newBuilder(
@@ -385,12 +384,12 @@ public class RecipesEndpoints {
 		    	  result = result.getNextPage();
 		    	}
 		    	
-		    	return new RecipesClass(summerrecipe,summerreciperecipelist);
+		    	return new RecipesClass(summerreciperecipelist);
 		    }
 	 
 	 @ApiMethod(name = "getFrozen", path = "getFrozen", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getFrozenRecipes(@Named("quickrecipe") ArrayList<String> frozenrecipe) throws Exception {
+	 public RecipesClass getFrozen() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -416,7 +415,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> frozenrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  frozenrecipe.add(row.get(0).getStringValue());
@@ -430,7 +429,7 @@ public class RecipesEndpoints {
 	 
 	 @ApiMethod(name = "getLowSugar", path = "getLowSugar", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getLowSugarRecipes(@Named("quickrecipe") ArrayList<String> nosugarrecipe) throws Exception {
+	 public RecipesClass getLowSugar() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -456,7 +455,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> nosugarrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  nosugarrecipe.add(row.get(0).getStringValue());
@@ -470,7 +469,7 @@ public class RecipesEndpoints {
 	 
 	 @ApiMethod(name = "getCakeRecipe", path = "getCakeRecipe", 
 	    		httpMethod = HttpMethod.GET)
-	 public RecipesClass getDessertRecipes(@Named("dessertrecipe") ArrayList<String> dessertrecipe) throws Exception {
+	 public RecipesClass getCakeRecipe() throws Exception {
 		BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 	    	QueryJobConfiguration queryConfig =
 	    	    QueryJobConfiguration.newBuilder(
@@ -496,7 +495,7 @@ public class RecipesEndpoints {
 	    	QueryResult result = response.getResult();
 
 	    	// Print all pages of the results.
-	    	
+	    	ArrayList<String> dessertrecipe = new ArrayList<String>();
 	    	while (result != null) {
 	    	  for (List<FieldValue> row : result.iterateAll()) {
 	    		  dessertrecipe.add(row.get(0).getStringValue());
