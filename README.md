@@ -14,12 +14,13 @@ Progress Tracking/Intermediate Submissions/Scrum Notes:
 
 
 Quality of Client: https://github.com/SpelmanMorehouse-472-2017/spelman-472-2017-3/tree/master/HTML_JS
-                   https://apis-explorer.appspot.com/apis-explorer/?base=https://spelman-472-2017-3.appspot.com/_ah/api#p/recipesendpoints/v1/
+                   
 
 
 
 
-Quality of Service: 
+Quality of Service: https://github.com/SpelmanMorehouse-472-2017/spelman-472-2017-3/tree/master/Code
+                    https://apis-explorer.appspot.com/apis-explorer/?base=https://spelman-472-2017-3.appspot.com/_ah/api#p/recipesendpoints/v1/
 
 
 
