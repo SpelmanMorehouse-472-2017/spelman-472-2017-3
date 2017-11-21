@@ -1,5 +1,44 @@
 # Mmmm-So-Good-
 
+Documentation Link: 
+
+
+
+Unit/Integration Test Plan & Test Implentation:
+
+
+
+Progress Tracking/Intermediate Submissions/Scrum Notes:
+
+
+
+
+Quality of Client: 
+
+
+
+
+Quality of Service: 
+
+
+
+Completeness of Implementation: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Tracking Plan Link: 
 1. Answer to Questions: https://docs.google.com/document/d/1iF0qUI-r_cmDwlcie4IkMJMvTH7VMs2-PGk8rJ7Lobk/edit
 2. Dashboard: https://docs.google.com/spreadsheets/d/1FQbs8LkD9ATtehUzAzWPgGKhykSKG1Ri79Iq9q8JTOo/edit?usp=sharing
