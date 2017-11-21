@@ -37,6 +37,9 @@ function loadCallback () {
 
 function enableButtons () {
 //	// Set the onclick action for the recipes button
+	btn = document.getElementById("recipes");
+	btn.onclick=function(){recipeName(document.getElementById("recipe_field").value);};
+	btn.value="Click me to search direction of your favorite recipes.";
 	btn = document.getElementById("breakfast");
 	btn.onclick=function(){recipeBreakfast();};
 	btn.value="Click Here For Breakfast";
