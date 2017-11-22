@@ -37,79 +37,79 @@ public class RecipeEndpointsTest {
         RecipeClass food = recipeEndpoints.getBreakfast()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getLunch()
+	food = recipeEndpoints.getLunch()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getDinner()
+	food = recipeEndpoints.getDinner()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getQuickEasy()
+	food = recipeEndpoints.getQuickEasy()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getGlutenFree()
+	food = recipeEndpoints.getGlutenFree()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getVegetarian()
+	food = recipeEndpoints.getVegetarian()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getFallRecipe()
+	food = recipeEndpoints.getFallRecipe()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getSpringRecipe()
+	food = recipeEndpoints.getSpringRecipe()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getSummer()
+	food = recipeEndpoints.getSummer()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getFrozen()
+	food = recipeEndpoints.getFrozen()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getLowSugar()
+	food = recipeEndpoints.getLowSugar()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getCakeRecipe()
+	food = recipeEndpoints.getCakeRecipe()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
 		
-		food = recipeEndpoints.getDirections()
+	food = recipeEndpoints.getDirections()
 
         Assert.assertNotNull(food);
-		Assert.assertNotNull(queryJob);
+	Assert.assertNotNull(queryJob);
         Assert.assertEquals(food, RecipeClass);
     }
 }
