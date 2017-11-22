@@ -16,7 +16,7 @@ public class RecipeClassTest {
 	public RecipeClass recipeClass1;
 	public RecipeClass recipeClass2;
 	
-	@Begin
+	@Before
 	public void setup() throws Exception{
 		recipeClass = new RecipeClass(name);
 		recipeClass1 = new RecipeClass(recipeList);
