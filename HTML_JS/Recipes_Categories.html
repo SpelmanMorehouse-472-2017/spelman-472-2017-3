@@ -4,12 +4,144 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Food &amp; Favorite Web Template</title>
+	<title>Food &amp; Recipes Web Template</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="recipes.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=init"></script>
 	<!--link rel="stylesheet" type="text/css" href="css/style.css"-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style2.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<script>
+    $(document).ready(function(){
+    		$("#btn1").click(function(){
+    			$("#div1").show("slow");
+       			$("#div2").hide();
+       			});
+    		$("#btn2").click(function(){
+    			$("#div1").hide();
+       			$("#div2").show();
+    			});
+    		});
+    </script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#breakfast").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#recipe_field").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#recipes").show("fast");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#lunch").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#dinner").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#quick").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#gluten").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#vegetarian").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#fall").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#spring").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#summer").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+		<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#frozen").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#lowSugar").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		  $("#div2").hide();
+		    $("#cake").click(function(){
+		        $("#div1").fadeOut("slow");
+		          $("#div2").show("slow");
+		    });
+		});
+	</script>
+	
 
 	<style>
 		body {font-family: "Lato", sans-serif}
@@ -224,6 +356,7 @@
 		.w3-border-white,.w3-hover-border-white:hover{border-color:#fff!important}
 		.w3-border-black,.w3-hover-border-black:hover{border-color:#000!important}
 		.w3-border-grey,.w3-hover-border-grey:hover,.w3-border-gray,.w3-hover-border-gray:hover{border-color:#bbb!important}
+
 		div.body div#content {
 		    background: url(../images/bg-content-top.jpg) no-repeat center top;
 		    border-radius: 0;
@@ -386,6 +519,7 @@
 		div.body div#content div div ul li p a {
 		    float: none;
 		}
+
 		/* Three columns side by side */
 		.column {
 		    float: left;
@@ -393,6 +527,7 @@
 		    margin-bottom: 16px;
 		    padding: 0 8px;
 		}
+
 		/* Display the columns below each other instead of side by side on small screens */
 		@media (max-width: 650px) {
 		    .column {
@@ -400,23 +535,28 @@
 		        display: block;
 		    }
 		}
+
 		/* Add some shadows to create a card effect */
 		.card {
 		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		}
+
 		/* Some left and right padding inside the container */
 		.container {
 		    padding: 0 16px;
 		}
+
 		/* Clear floats */
 		.container::after, .row::after {
 		    content: "";
 		    clear: both;
 		    display: table;
 		}
+
 		.title {
 		    color: grey;
 		}
+
 		.button {
 		    border-color: black;
 		    outline: 0;
@@ -430,7 +570,10 @@
 		    font-family: "Lato", sans-serif;
 		    font-size:20px;
 		    font-weight : bold;
+
+
 		}
+
 		.button1{
 		    border: black;
 		    outline: 0;
@@ -441,54 +584,64 @@
 		    text-align: center;
 		    cursor: pointer;
 		    width: 100%;
+
 		}
+
 		.button:hover {
 		    background-color: white;
 		}
+
 		li{margin : 10px 0;}
+
 	</style>
 
 </head>
 <body>
 <div class="w3-top">
 	<div class="w3-bar w3-white w3-card">
+		<a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-left">HOME</a>
 		<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    	<a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">HOME</a>
-		<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-	</div>
+		<a href="portal.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">PORTAL</a>
+		<a href="favorites.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAVORITES</a>
+		<input class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right"  value ="Search a Recipe Here" id="recipe_field">
+		<input class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right" id="recipes" type="button" value="please wait" onclick="will_be_set_after_endpoints_apis_loaded">
 </div>
-
+	</div>
 
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">LOGOUT</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
 </div>
 
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:2000px;margin-top:46px"></div>
 
-
-<div class="body">
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
         <h1 style = "font-size:80px; text-align :center;padding: 10px; border-color: black; border-style:solid;border-width:thick; " >RECIPES</h1>
 
 </div>
-</div>
+<div class="body" id="div1">
 
     <div class="row">
+    
         <div class="column">
+        
             <div class="card">
                 <img src="http://glutenfreeonashoestring.com/_main_site/wp-content/uploads/2016/02/stack-3.jpg" alt="Jane" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Breakfast</button></p>
+                <p><input id="breakfast" class ="button" type="button" value="Breakfast" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
-            </div>
-        </div>
-
+                </div>
+                </div>
         <div class="column">
             <div class="card">
                 <img src="http://www.holajalapeno.com/wordpress/wp-content/uploads/2014/05/Green-Chile.jpg" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Lunch</button></p>
+                <p><input id="lunch" class ="button" type="button" value="Lunch" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
             </div>
         </div>
@@ -497,17 +650,18 @@
             <div class="card">
                 <img src="http://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/200703-r-xl-rosemary-lamb-chops.jpg?itok=RV8vXOGq" alt="John" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Dinner</button></p>
+                <p><input id="dinner" class ="button" type="button" value="Dinner" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
             </div>
         </div>
-
 
         <div class="column">
         <div class="card">
             <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/gnocchi-with-mushrooms-blue-cheese.jpg" alt="Mike" width= 100%  height = "300">
             <div class="container">
-                <p><button class="button">Quick and Easy</button></p>
+            <p><input id="quick" class ="button" type="button" value="Quick and Easy" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
             </div>
         </div>
     </div>
@@ -516,17 +670,19 @@
             <div class="card">
                 <img src="http://www.pbs.org/food/wp-content/blogs.dir/2/files/2011/12/2011Trends-glutenfree.jpg" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Gluten Free</button></p>
+                <p><input id="gluten" class ="button" type="button" value="Gluten Free" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
             </div>
         </div>
-
 
         <div class="column">
             <div class="card">
                 <img src="http://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/2017/03/main/beer-brushed-tofu-skewers-barley-1705p105.jpg?itok=OdHLIfLx" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Vegetarian</button></p>
+                <p><input id="vegetarian" class ="button" type="button" value="Vegetarian" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
+                    <!-- <p><button id="vegetarian" class="button">Vegetarian</button></p> -->
                 </div>
             </div>
         </div>
@@ -535,7 +691,9 @@
             <div class="card">
                 <img src="http://wdy.h-cdn.co/assets/16/31/980x490/landscape-1470158619-wdy090114shortdinner-018.jpg" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Fall</button></p>
+                <p><input id="fall" class ="button" type="button" value="Fall" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
+                    <!-- <p><button id="fall" class="button">Fall</button></p> -->
                 </div>
             </div>
         </div>
@@ -544,7 +702,9 @@
             <div class="card">
                 <img src="http://watchfit.com/wp-content/uploads/2014/03/Spring-food-trends-in-2014-that-your-diet-will-LOVE-1024x941.jpg" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Spring</button></p>
+                <p><input id="spring" class ="button" type="button" value="Spring" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
+                    <!-- <p><button id="spring" class="button">Spring</button></p> -->
                 </div>
             </div>
         </div>
@@ -553,26 +713,29 @@
             <div class="card">
                 <img src="http://interactive.wxxi.org/sites/default/files/images/highlights/helathy_meal_photo.jpg" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Summer</button></p>
+                <p><input id="summer" class ="button" type="button" value="Summer" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
+                    <!-- <p><button id="summer" class="button">Summer</button></p> -->
                 </div>
             </div>
         </div>
-
 
         <div class="column">
             <div class="card">
                 <img src = "https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fupdated_main_images%2F0107cover-strawberry-gelato-x.jpg%3Fitok%3Dki-Rh_yc&w=700&q=85" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Frozen Dessert</button></p>
+                <p><input id="frozen" class ="button" type="button" value="Frozen Dessert" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <img src="https://a.dilcdn.com/bl/wp-content/uploads/sites/8/2014/01/oatmeal-jam-bars.jpg" alt="Mike" width= 100%  height = "300">
+                <img src="http://cdn.vkool.com/wp-content/uploads/2014/06/low-sugar-foods-is-walnut.jpg" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Low/No Sugar</button></p>
+                <p><input id="lowSugar" class ="button" type="button" value="Low/No Sugar" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
             </div>
         </div>
@@ -581,55 +744,22 @@
             <div class="card">
                 <img src="http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=ywvB8Ft5" alt="Mike" width= 100%  height = "300">
                 <div class="container">
-                    <p><button class="button">Cake</button></p>
+                <p><input id="cake" class ="button" type="button" value="Cake" 
+                onclick="will_be_set_after_endpoints_apis_loaded"></p>
                 </div>
             </div>
         </div>
-
     </div>
+</div>
 
-
-
+    <div id= "div2"><p><div align="center"><table id="myTable" align="center">	
+    </table><button id="btn1">Hide Recipes</button>
+    <button id="btn2">Show Menu Choices</button>
+    </div>
+    </div>    
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Group 3</a></p>
 </footer>
-
-<script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 4000);
-    }
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
+</body>
+</html>
